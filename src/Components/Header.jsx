@@ -19,9 +19,9 @@ export default function Header({ isHome }) {
           />
         </Link>
 
-        <nav className="flex gap-7.5 font-mulish text-[15px] leading-5.5 items-center font-500">
+        <nav className="flex gap-7.5 text-[15px] leading-5.5 font-semibold items-center ">
           <Link to="/" className={isHome ? "text-white" : "text-dark-80"}>
-            Home
+            Home 
           </Link>
           <Link to="/about" className={isHome ? "text-white" : "text-dark-80"}>
             About Us
@@ -29,10 +29,10 @@ export default function Header({ isHome }) {
           <Link to="/packages" className={isHome ? "text-white" : "text-dark-80"}>
             Our Packages
           </Link>
-          <Link to="/packages" className={isHome ? "text-white" : "text-dark-80"}>
+          <Link to="/populardestinations" className={isHome ? "text-white" : "text-dark-80"}>
             Popular Destinations
           </Link>
-          <Link to="/packages" className={isHome ? "text-white" : "text-dark-80"}>
+          <Link to="/help" className={isHome ? "text-white" : "text-dark-80"}>
             Help
           </Link>
           <div>

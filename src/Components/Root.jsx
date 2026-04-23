@@ -1,16 +1,20 @@
-import React from 'react'
-import Header from './Header'
-import { Outlet } from 'react-router'
-import Footer from './Footer'
+import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
+import { Outlet, useLocation } from "react-router";
 
 const Root = () => {
-  return (
-    <>
-        <Header />
-        <Outlet />
-        <Footer />
-    </>
-  )
-}
+  const location = useLocation();
 
-export default Root
+  const isHome = location.pathname === "/";
+
+  return (
+    <main>
+      <Header isHome={isHome} />
+      <Outlet />
+      <Footer />
+    </main>
+  );
+};
+
+export default Root;
