@@ -17,10 +17,14 @@
     --color-dark-80: #495560;
     --color-dark-60: #778088;
     --color-greens: #7BBCB0;
+    --color-greenis: #AFFFF0;
+   
     --color-red: #FF6969;
     --color-blue: #59A9FE;
     --color-purple: #D176E0;
     --color-yellow: #E4B613;
+    --color-gray: #E8EAEB;
+   
 
   /* Font Family */
 
@@ -30,4 +34,5 @@
 
 body {
   font-family: var(--font-mulish);
+  color: var(--color-black-heading);
 }

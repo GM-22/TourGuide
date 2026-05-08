@@ -5,6 +5,7 @@ import btnimg from "../assets/btnimg.svg";
 import Location from "../Components/Icons/Location";
 import Calender from "../Components/Icons/Calender";
 import Users from "../Components/Icons/users";
+import Button from "../Components/Button";
 const Banner = () => {
   const videoRef = useRef(null);
   const [isPaused, setIsPaused] = useState(true);
@@ -61,7 +62,7 @@ const Banner = () => {
 
 const SmallSection = () => {
   return (
-    <div className=" rounded-[10px] shadow-greens bg-white w-[1000px] h-[90px] flex justify-between p-5 rounder-[10px] ">
+    <div className=" rounded-[10px] shadow-xl shadow-[#7BBCB0]/50 bg-white w-[1000px] h-[90px] flex justify-between p-5 rounder-[10px] ">
       <div className="flex justify-between w-full">
         <div className="flex gap-2.5 w-[250px] ">
           <Location className="mt-1.5" />
@@ -99,9 +100,7 @@ const SmallSection = () => {
             </p>
           </div>
         </div>
-        <button className=" w-[150px] h-[54px] rounded-[40px] shadow-[#FFDA32] bg-[#FFDA32] font-extrabold text-[16px] leading-[22px] shadow-lg ">
-          Search{" "}
-        </button>
+        <Button title={"Search"} className={" px-12"} />
       </div>
     </div>
   );
